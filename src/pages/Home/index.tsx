@@ -1,9 +1,9 @@
-import { HomeCotainer } from "./styles";
+import { HomeCotainer, HeaderContainer } from "./styles";
 
 export function Home(){
   return (
     <HomeCotainer>
-      <h1>Home</h1>
+
     </HomeCotainer>
   )
 }
