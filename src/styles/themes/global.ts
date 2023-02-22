@@ -10,7 +10,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased;
-    background-color: ${(props) => props.theme['base-card']}
+    background-color: ${(props) => props.theme['base-card']};
+    max-width: 1440px;
+    margin: 0 auto;
+
   }
 
   :focus {

@@ -1,15 +1,16 @@
-import { HeaderContainer } from "./styles"
-import { ShoppingCartSimple } from "phosphor-react"
+import { HeaderContainer, Actions } from "./styles"
 import Logo  from '../../assets/Logo.svg'
+import Map  from '../../assets/Map.svg'
+import Cart  from '../../assets/Cart.svg'
 
 export function Header(){
   return(
     <HeaderContainer>
         <img src={Logo} alt=""/>
-        <div>
-          <p>Arujá-SP</p>
-          <button><ShoppingCartSimple size={18} /></button>
-        </div>
+        <Actions>
+          <p> <img src={Map}/> Arujá, SP</p>
+          <button><img src={Cart}/></button>
+        </Actions>
     </HeaderContainer>
   )
 }
