@@ -4,6 +4,12 @@ export const HeaderContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
 `
 
 export const Actions = styled.div`

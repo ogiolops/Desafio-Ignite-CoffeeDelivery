@@ -2,15 +2,21 @@ import { HeaderContainer, Actions } from "./styles"
 import Logo  from '../../assets/Logo.svg'
 import Map  from '../../assets/Map.svg'
 import Cart  from '../../assets/Cart.svg'
+import { NavLink } from 'react-router-dom'
 
 export function Header(){
   return(
     <HeaderContainer>
-        <img src={Logo} alt=""/>
+      <nav>
+        <NavLink to='/' ><img src={Logo} alt=""/></NavLink>
+        
         <Actions>
           <p> <img src={Map}/> Arujá, SP</p>
-          <button><img src={Cart}/></button>
+          
+            <NavLink to='/Checkout' ><button ><img src={Cart}/></button></NavLink>
+                
         </Actions>
+      </nav>  
     </HeaderContainer>
   )
 }
