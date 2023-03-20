@@ -6,6 +6,7 @@ import Credit from '../../assets/credit.svg'
 import Debit from '../../assets/credit.svg'
 import Money from '../../assets/money.svg'
 import Trash from '../../assets/trash.svg'
+import { NavLink } from "react-router-dom";
 
 export function CheckOut(){
   return(
@@ -98,7 +99,11 @@ export function CheckOut(){
             <h1>Total</h1>
             <h1>R$ 29,70</h1>
           </div>
-          <button>CONFIRMAR PEDIDO</button>
+          <nav>
+            <NavLink to='/Success' ><button>CONFIRMAR PEDIDO</button></NavLink>
+          </nav>
+          
+          
         </div>
         </div>
 

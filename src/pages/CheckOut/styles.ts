@@ -16,9 +16,6 @@ export const PurchaseContainer = styled.div`
     font-family: 'Baloo 2', cursive;
   }
 
-
-  
-
   .form-container {
     display:flex;
     flex-direction: column;
@@ -82,19 +79,19 @@ export const PurchaseContainer = styled.div`
         width: 100%;
       }
       :nth-child(3){
-        width: 116px;
+        width: 200px;
       }
       :nth-child(4){
-        width: 348px;
+        width: 350px;
       }
       :nth-child(5){
-        width: 150px;
+        width: 200px;
       }
       :nth-child(6){
-        width: 248px;
+        width: 280px;
       }
       :nth-child(7){
-        width: 50px;
+        width: 60px;
       }
     }
 
@@ -292,6 +289,7 @@ export const SelectedCoffees = styled.div`
 
   button {
     height: 46px;
+    width: 100%;
     background-color: ${(props) => props.theme['yellow']};
     color: ${(props) => props.theme['white']};
     border: none;
